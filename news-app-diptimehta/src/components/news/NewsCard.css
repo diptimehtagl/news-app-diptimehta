@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.col {
+  display: flex;
+  flex-wrap: wrap;
+}
+.loader {
+  margin: auto;
+  width: 10vw;
+  margin-top: 20vh;
+}
+.card {
+  border: 1px solid black;
+  width: 550px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.cardImage {
+  width: 200px;
+  height: 150px;
+  float: right;
+}
+.cardTitle {
+  font-weight: bold;
+}
