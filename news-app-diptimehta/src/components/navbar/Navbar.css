@@ -1,17 +1,17 @@
-.ul-navbar {
+.ulNavbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgb(31, 31, 31);
   }
-  .li-navbar {
+  .liNavbar {
     float: left;
   }
   .floatRight{
     float: right;
   }
-  .li-navbar a{
+  .liNavbar a{
     display: block;
     color: white;
     text-align: center;

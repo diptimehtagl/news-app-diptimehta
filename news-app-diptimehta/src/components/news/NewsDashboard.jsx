@@ -2,20 +2,13 @@ import React, { useState, useEffect } from "react";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import NewsCard from "./NewsCard";
-import { newsUrl } from "../../constants/newsUrl";
+import { fetchNewsApi } from "../../services/fetchNews";
 export const NewsDashboard = () => {
   let [news, setnews] = useState([]);
   useEffect(() => {
-    fetch(newsUrl)
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-      })
-      .then((data) => {
-        console.log(data);
-        setnews(data.articles);
-      });
+    fetchNewsApi().then((data) => {
+      setnews(data.articles);
+    });
   }, []);
   return (
     <div>

@@ -1,23 +1,23 @@
 import React from "react";
 import "./HeadlineCard.css";
-export const HeadlineCard = (props) => {
+export const HeadlineCard = ({ headlineItem }) => {
   return (
     <div>
       <article class="headlineCard">
         <header>
           <center>
-            <h1>{props.headline.title}</h1>
+            <h1>{headlineItem.title}</h1>
           </center>
         </header>
         <img
-          src={props.headline.urlToImage}
+          src={headlineItem.urlToImage}
           className="headlineCardImage"
-          alt="covaxin"
+          alt="news_image"
         />
         <div class="content">
-          <p>{props.headline.description}</p>
+          <p>{headlineItem.description}</p>
           <button className="readMore">
-            <a href={props.headline.url}>ReadMore</a>
+            <a href={headlineItem.url}>ReadMore</a>
           </button>
         </div>
       </article>
