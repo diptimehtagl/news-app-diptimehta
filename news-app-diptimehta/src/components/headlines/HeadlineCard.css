@@ -1,0 +1,36 @@
+.headlineCard {
+  display: grid;
+  grid-template-rows: max-content 350px 1fr;
+  width: 850px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.headlineCard p {
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.726);
+  height: fit-content;
+}
+h1 {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+.homepage h1 {
+  margin-top: 0px;
+}
+.readMore {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 10px;
+}
+.headlineCardImage {
+  width: 850px;
+  height: 500px;
+}
+.headlineCard a{
+    color: white;
+    text-decoration: none;
+}

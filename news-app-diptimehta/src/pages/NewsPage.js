@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import { NewsDashboard } from "../components/news/NewsDashboard";
 
 export const NewsPage = () => {
-    return (
-        <div>
-            newspage
-        </div>
-    )
-}
+  return (
+    <div>
+      <NewsDashboard />
+    </div>
+  );
+};
